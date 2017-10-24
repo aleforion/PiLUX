@@ -1,0 +1,103 @@
+div{
+	font-family: Arial;
+}
+header{
+	position: relative;
+	border: 1px solid #ffa834;
+	background-color: #ffa834;
+	color: white;
+	height: 50px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	padding-bottom: 30px;
+}
+main{
+	position: relative;
+	border: 1px solid #ebebeb;
+	height: 700px;
+	background-color: white;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px; 
+	padding-top: 20px;
+	background-image: url(rasp.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 800px 820px;
+}
+h1{
+	text-align: center;
+	margin-top: 0px;
+	font-size: 75px;
+}
+p{
+	font-size: 70px;
+	font-weight: bold;
+}
+
+
+
+/*INICIO BOTOES*/
+
+button.botoes{
+	position: relative;
+	font-size: 30px;
+	border-radius: 8px;
+	color: white;
+	padding: 25px 40px;
+	box-shadow: 0 8px 16px rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.20); 
+}
+.botoes:hover{
+	background-color: white;
+	color: black;
+}
+
+button#ligar{
+		background-color: #009688;
+		border: 1px solid #009688;
+		margin-left: 21px;
+		left: 20px;
+		margin-top: 100px;
+}
+button#ligar2{
+		background-color: #009688;
+		border: 1px solid #009688;
+}
+button#desligar{
+	background-color: #f06292;
+	border: 1px solid #f06292;
+	left: 21px;
+	margin-top: 100px;
+}
+button#desligar2{
+	background-color: #f06292;
+	border: 1px solid #f06292;
+}
+button#piscar{
+	background-color: #1976d2;
+	border: 1px solid #1976d2;
+	left: 21px;
+	margin-top: 100px;
+}
+button#piscar2{
+	background-color: #1976d2;
+	border: 1px solid #1976d2;
+}
+
+button#piscar3{
+	background-color: #1976d2;
+	border: 1px solid #1976d2;
+	left: 47px;
+}
+
+button#desligar3{
+	background-color: #f06292;
+	border: 1px solid #f06292;
+	left: 47px;
+}
+button#ligar3{
+	background-color: #009688;
+	border: 1px solid #009688;
+	left: 47px;
+}
+
+/*FIM BOTOES*/

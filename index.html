@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>PiLUX</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+				function ambiente(data, pino){
+					var a = new XMLHttpRequest();
+					if(data == 0){				
+					a.open("GET","desligar.php?pino="+pino);
+					}else if (data == 1){
+					a.open("GET","ligar.php?pino="+pino);
+					}else{
+					a.open("GET", "piscar.php?pino="+pino);
+					}
+					a.onreadystatechange=function(){if(a.readyState==4 && a.status!=200){alert("ERROR");}}
+					a.send();
+				}
+		
+		</script>
+	</head> 
+	<body> 
+		<div>
+			<header>
+				<h1>PiLUX</h1>
+			</header>
+			<main>
+				<center>
+					<p>T&eacute;rreo
+					<button class = "botoes" id="ligar" onclick="ambiente(1, 4)">Ligar</button>
+					<button class = "botoes" id="desligar" onclick="ambiente(0, 4)">Desligar</button>
+					<button class = "botoes" id="piscar" onclick="ambiente(2, 4)">Piscar</button>
+					</p>
+
+					<p>1&ordm; Andar
+					<button class = "botoes" id="ligar2" onclick="ambiente(1, 27)">Ligar</button>
+					<button class = "botoes" id="desligar2" onclick="ambiente(0, 27)">Desligar</button>
+					<button class = "botoes" id="piscar2" onclick="ambiente(2, 27)">Piscar</button>
+					</p>
+
+					<p>Poste
+					<button class = "botoes" id="ligar3" onclick="ambiente(1, 21)">Ligar</button>
+					<button class = "botoes" id="desligar3" onclick="ambiente(0, 21)">Desligar</button>
+					<button class = "botoes" id="piscar3" onclick="ambiente(2, 21)">Piscar</button>
+					</p>
+				</center>
+			</main>
+		</div>
+	</body> 
+</html>	
